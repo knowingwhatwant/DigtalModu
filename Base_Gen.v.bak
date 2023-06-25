@@ -1,0 +1,31 @@
+module Base_Gen(
+    input clk,
+    input rst,
+    output base_data
+);
+
+
+reg base_data_reg;
+
+
+assign base_data = base_data_reg;
+
+always@(posedge clk or negedge rst)
+begin
+    if(!rst)
+    begin
+        base_data <= 1'd0;
+    end
+    else begin
+    base_data_reg <= base_data_reg ^ 1'd1;  //clk上升沿翻转    
+    end
+end
+
+
+
+endmodule
+
+
+
+
+

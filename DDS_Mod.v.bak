@@ -1,0 +1,35 @@
+module DDS_Mod(
+    input 	clk,
+    input   rst_n,
+
+	output   [11:0]  sin		//调制信号
+);
+//--------------------------------------------------------//
+parameter   Freq = 32'd429496;	//10kHz
+parameter   cnt_width =  8'd32;    
+//--------------------------------------------------------//
+
+//--------------------------------------------------------//
+reg     [cnt_width-1:0]cnt_I = 0;
+wire    [11:0] 	addr_I;
+
+always @(posedge clk or negedge rst_n) begin
+	if(!rst_n)	begin
+		cnt_I <= 0;
+	end
+	else	begin
+	    cnt_I <= cnt_I + Freq;
+	end
+end
+
+assign  addr_I = cnt_I[cnt_width-1:cnt_width-12];
+//--------------------------------------------------------//
+
+//--------------------调用一个单口ROM核--------------------//
+rom_ip	Sin_inst(
+  	.clock		(clk),
+  	.address		(addr_I),
+  	.q				(sin)
+);
+
+endmodule

@@ -1,0 +1,48 @@
+module TOP(
+		input			clk,
+		input			rst_n,
+		output clk_100M,
+		output clk_50M,
+		output clk_inv,
+		output locked,
+		output         	[12:0]  FM_Mod_data,
+		output [11:0] adc_data
+		
+);
+
+
+
+
+assign clk_inv = ~clk_100M;
+
+
+pll_ip PLL_mod_inst(
+	.areset(~rst_n),
+	.inclk0(clk),
+	.c0(clk_100M),
+	.c1(clk_50M),
+	.locked(locked)
+);
+
+
+//----------------ADC-----------------//
+//wire    [11:0]  adc_data;
+
+DDS_Mod         DDS_Mod_inst(
+    .clk        (clk_100M),
+    .rst_n      (rst_n),
+	.sin		(adc_data)
+);
+//------------------------------------//
+
+//---------------FM调制----------------//
+
+FM_Mod          FM_Mod_inst(
+	.clk        (clk_100M),
+	.rst_n      (rst_n),
+	.adc_data   (adc_data),
+	.FM_Mod     (FM_Mod_data)
+);
+
+
+endmodule

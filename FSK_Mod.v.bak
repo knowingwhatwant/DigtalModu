@@ -1,0 +1,32 @@
+module FSK_Mod(
+    input clk,
+    input rst,
+    input [11:0] car1_data,
+    input [11:0] car2_data,
+    input fsk_base_data,
+    output [11:0] FSK_Mod_data
+)
+
+parameter BIAS = 12'd1023;
+
+
+reg [11:0] FSK_data_reg;
+
+always@(posedge clk or negedge rst)
+begin
+    if(!rst)
+    begin 
+        ASK_data_reg <= 12'd0;
+    end
+    else begin
+        if(fsk_base_data) begin
+        FSK_data_reg <= car1_data;
+        end else begin
+        FSK_data_reg <= car2_data;
+        end
+end 
+end
+assign FSK_Mod_data = FSK_data_reg;
+
+endmodule
+
