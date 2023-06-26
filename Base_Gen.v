@@ -17,7 +17,7 @@ begin
         base_data_reg <= 1'd0;
     end
     else begin
-    base_data_reg <= base_data_reg ^ 1'd1;  //clk涓婂崌娌跨炕杞   
+    base_data_reg <= base_data_reg ^ 1'd1;  //clk
     end
 end
 

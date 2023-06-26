@@ -3,7 +3,7 @@ module TOP(
 		input		rst_n,
 		output 		clk_120M,
 		output 		clk_50M,
-		output      base_gen,
+		output  [1:0]base_gen2,
 		output 		clk_inv,
 		output 		locked,
 		output 		[11:0] adc_data
@@ -38,11 +38,11 @@ DDS_Mod  #(64'd153722867280913000)DDS_Mod_inst1(
 
 //---------------BPSK-----------------//
 
-BPSK_Mod Bpsk_Mod_inst(
+QPSK_Mod Bpsk_Mod_inst(
 	.clk(clk_120M),
 	.rst(rst_n),
-	.bpsk_base_data(base_gen),
-	.BPSK_Mod_data(adc_data),
+	.qpsk_base_data(base_gen2),
+	.QPSK_Mod_data(adc_data),
 
 );
 
@@ -83,10 +83,10 @@ ASK_Mod ASK_Mod_inst(
 
 
 //--------------Base_Gen--------------//
-Base_Gen Base_Gen_inst(
+Base_Gen2 Base_Gen_inst(
 	.clk(clk_100k),
 	.rst(rst_n),
-	.base_data(base_gen)
+	.base_data(base_gen2)
 
 );
 

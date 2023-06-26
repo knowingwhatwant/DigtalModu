@@ -1,6 +1,6 @@
 <sld_project_info>
   <project>
-    <hash md5_digest_80b="f251c4218e5d495b307d"/>
+    <hash md5_digest_80b="3618f075d12e5b060900"/>
   </project>
   <file_info>
     <file device="EP4CE10E22C8" path="Digital_Modu.sof" usercode="0xFFFFFFFF"/>
@@ -87,7 +87,7 @@
         <port name="jtag.bp.DDS_Mod_inst1_Sin_inst_altsyncram_component_auto_generated_mgl_prim2_tdo"/>
       </outputs>
     </node>
-    <node hpath="BPSK_Mod:Bpsk_Mod_inst|rom_ip:Sin_inst|altsyncram:altsyncram_component|altsyncram_noe1:auto_generated|sld_mod_ram_rom:mgl_prim2" instance_id="1" mfg_id="110" node_id="3" sld_node_info="0x8186E01" version="1">
+    <node hpath="QPSK_Mod:Bpsk_Mod_inst|rom_ip:Sin_inst|altsyncram:altsyncram_component|altsyncram_noe1:auto_generated|sld_mod_ram_rom:mgl_prim2" instance_id="1" mfg_id="110" node_id="3" sld_node_info="0x8186E01" version="1">
       <parameters>
         <parameter name="SLD_NODE_INFO" type="dec" value="135818752"/>
         <parameter name="SLD_AUTO_INSTANCE_INDEX" type="string" value="yes"/>
@@ -104,18 +104,18 @@
         <parameter name="node_name" type="unknown" value="1936289280"/>
       </parameters>
       <inputs>
-        <port name="data_read[0]" source="BPSK_Mod:Bpsk_Mod_inst|rom_ip:Sin_inst|altsyncram:altsyncram_component|altsyncram_noe1:auto_generated|altsyncram_5dg2:altsyncram1|q_b[0]"/>
-        <port name="data_read[1]" source="BPSK_Mod:Bpsk_Mod_inst|rom_ip:Sin_inst|altsyncram:altsyncram_component|altsyncram_noe1:auto_generated|altsyncram_5dg2:altsyncram1|q_b[1]"/>
-        <port name="data_read[2]" source="BPSK_Mod:Bpsk_Mod_inst|rom_ip:Sin_inst|altsyncram:altsyncram_component|altsyncram_noe1:auto_generated|altsyncram_5dg2:altsyncram1|q_b[2]"/>
-        <port name="data_read[3]" source="BPSK_Mod:Bpsk_Mod_inst|rom_ip:Sin_inst|altsyncram:altsyncram_component|altsyncram_noe1:auto_generated|altsyncram_5dg2:altsyncram1|q_b[3]"/>
-        <port name="data_read[4]" source="BPSK_Mod:Bpsk_Mod_inst|rom_ip:Sin_inst|altsyncram:altsyncram_component|altsyncram_noe1:auto_generated|altsyncram_5dg2:altsyncram1|q_b[4]"/>
-        <port name="data_read[5]" source="BPSK_Mod:Bpsk_Mod_inst|rom_ip:Sin_inst|altsyncram:altsyncram_component|altsyncram_noe1:auto_generated|altsyncram_5dg2:altsyncram1|q_b[5]"/>
-        <port name="data_read[6]" source="BPSK_Mod:Bpsk_Mod_inst|rom_ip:Sin_inst|altsyncram:altsyncram_component|altsyncram_noe1:auto_generated|altsyncram_5dg2:altsyncram1|q_b[6]"/>
-        <port name="data_read[7]" source="BPSK_Mod:Bpsk_Mod_inst|rom_ip:Sin_inst|altsyncram:altsyncram_component|altsyncram_noe1:auto_generated|altsyncram_5dg2:altsyncram1|q_b[7]"/>
-        <port name="data_read[8]" source="BPSK_Mod:Bpsk_Mod_inst|rom_ip:Sin_inst|altsyncram:altsyncram_component|altsyncram_noe1:auto_generated|altsyncram_5dg2:altsyncram1|q_b[8]"/>
-        <port name="data_read[9]" source="BPSK_Mod:Bpsk_Mod_inst|rom_ip:Sin_inst|altsyncram:altsyncram_component|altsyncram_noe1:auto_generated|altsyncram_5dg2:altsyncram1|q_b[9]"/>
-        <port name="data_read[10]" source="BPSK_Mod:Bpsk_Mod_inst|rom_ip:Sin_inst|altsyncram:altsyncram_component|altsyncram_noe1:auto_generated|altsyncram_5dg2:altsyncram1|q_b[10]"/>
-        <port name="data_read[11]" source="BPSK_Mod:Bpsk_Mod_inst|rom_ip:Sin_inst|altsyncram:altsyncram_component|altsyncram_noe1:auto_generated|altsyncram_5dg2:altsyncram1|q_b[11]"/>
+        <port name="data_read[0]" source="QPSK_Mod:Bpsk_Mod_inst|rom_ip:Sin_inst|altsyncram:altsyncram_component|altsyncram_noe1:auto_generated|altsyncram_5dg2:altsyncram1|q_b[0]"/>
+        <port name="data_read[1]" source="QPSK_Mod:Bpsk_Mod_inst|rom_ip:Sin_inst|altsyncram:altsyncram_component|altsyncram_noe1:auto_generated|altsyncram_5dg2:altsyncram1|q_b[1]"/>
+        <port name="data_read[2]" source="QPSK_Mod:Bpsk_Mod_inst|rom_ip:Sin_inst|altsyncram:altsyncram_component|altsyncram_noe1:auto_generated|altsyncram_5dg2:altsyncram1|q_b[2]"/>
+        <port name="data_read[3]" source="QPSK_Mod:Bpsk_Mod_inst|rom_ip:Sin_inst|altsyncram:altsyncram_component|altsyncram_noe1:auto_generated|altsyncram_5dg2:altsyncram1|q_b[3]"/>
+        <port name="data_read[4]" source="QPSK_Mod:Bpsk_Mod_inst|rom_ip:Sin_inst|altsyncram:altsyncram_component|altsyncram_noe1:auto_generated|altsyncram_5dg2:altsyncram1|q_b[4]"/>
+        <port name="data_read[5]" source="QPSK_Mod:Bpsk_Mod_inst|rom_ip:Sin_inst|altsyncram:altsyncram_component|altsyncram_noe1:auto_generated|altsyncram_5dg2:altsyncram1|q_b[5]"/>
+        <port name="data_read[6]" source="QPSK_Mod:Bpsk_Mod_inst|rom_ip:Sin_inst|altsyncram:altsyncram_component|altsyncram_noe1:auto_generated|altsyncram_5dg2:altsyncram1|q_b[6]"/>
+        <port name="data_read[7]" source="QPSK_Mod:Bpsk_Mod_inst|rom_ip:Sin_inst|altsyncram:altsyncram_component|altsyncram_noe1:auto_generated|altsyncram_5dg2:altsyncram1|q_b[7]"/>
+        <port name="data_read[8]" source="QPSK_Mod:Bpsk_Mod_inst|rom_ip:Sin_inst|altsyncram:altsyncram_component|altsyncram_noe1:auto_generated|altsyncram_5dg2:altsyncram1|q_b[8]"/>
+        <port name="data_read[9]" source="QPSK_Mod:Bpsk_Mod_inst|rom_ip:Sin_inst|altsyncram:altsyncram_component|altsyncram_noe1:auto_generated|altsyncram_5dg2:altsyncram1|q_b[9]"/>
+        <port name="data_read[10]" source="QPSK_Mod:Bpsk_Mod_inst|rom_ip:Sin_inst|altsyncram:altsyncram_component|altsyncram_noe1:auto_generated|altsyncram_5dg2:altsyncram1|q_b[10]"/>
+        <port name="data_read[11]" source="QPSK_Mod:Bpsk_Mod_inst|rom_ip:Sin_inst|altsyncram:altsyncram_component|altsyncram_noe1:auto_generated|altsyncram_5dg2:altsyncram1|q_b[11]"/>
         <port name="jtag.bp.Bpsk_Mod_inst_Sin_inst_altsyncram_component_auto_generated_mgl_prim2_raw_tck" source="jtag.bp.Bpsk_Mod_inst_Sin_inst_altsyncram_component_auto_generated_mgl_prim2_raw_tck"/>
         <port name="jtag.bp.Bpsk_Mod_inst_Sin_inst_altsyncram_component_auto_generated_mgl_prim2_tdi" source="jtag.bp.Bpsk_Mod_inst_Sin_inst_altsyncram_component_auto_generated_mgl_prim2_tdi"/>
         <port name="jtag.bp.Bpsk_Mod_inst_Sin_inst_altsyncram_component_auto_generated_mgl_prim2_usr1" source="jtag.bp.Bpsk_Mod_inst_Sin_inst_altsyncram_component_auto_generated_mgl_prim2_usr1"/>
@@ -174,11 +174,11 @@
         <parameter name="SLD_IP_VERSION" type="dec" value="6"/>
         <parameter name="SLD_IP_MINOR_VERSION" type="dec" value="0"/>
         <parameter name="SLD_COMMON_IP_VERSION" type="dec" value="0"/>
-        <parameter name="sld_data_bits" type="unknown" value="13"/>
-        <parameter name="sld_trigger_bits" type="unknown" value="13"/>
+        <parameter name="sld_data_bits" type="unknown" value="14"/>
+        <parameter name="sld_trigger_bits" type="unknown" value="14"/>
         <parameter name="SLD_NODE_CRC_BITS" type="dec" value="32"/>
-        <parameter name="sld_node_crc_hiword" type="unknown" value="55711"/>
-        <parameter name="sld_node_crc_loword" type="unknown" value="60927"/>
+        <parameter name="sld_node_crc_hiword" type="unknown" value="7000"/>
+        <parameter name="sld_node_crc_loword" type="unknown" value="38201"/>
         <parameter name="SLD_INCREMENTAL_ROUTING" type="dec" value="0"/>
         <parameter name="sld_sample_depth" type="unknown" value="16384"/>
         <parameter name="sld_segment_size" type="unknown" value="16384"/>
@@ -206,8 +206,8 @@
         <parameter name="SLD_ADVANCED_TRIGGER_8" type="string" value="NONE"/>
         <parameter name="SLD_ADVANCED_TRIGGER_9" type="string" value="NONE"/>
         <parameter name="SLD_ADVANCED_TRIGGER_10" type="string" value="NONE"/>
-        <parameter name="sld_inversion_mask_length" type="unknown" value="67"/>
-        <parameter name="sld_inversion_mask" type="unknown" value="0000000000000000000000000000000000000000000000000000000000000000000"/>
+        <parameter name="sld_inversion_mask_length" type="unknown" value="70"/>
+        <parameter name="sld_inversion_mask" type="unknown" value="0000000000000000000000000000000000000000000000000000000000000000000000"/>
         <parameter name="sld_power_up_trigger" type="unknown" value="0"/>
         <parameter name="SLD_STATE_FLOW_MGR_ENTITY" type="string" value="state_flow_mgr_entity.vhd"/>
         <parameter name="sld_state_flow_use_generated" type="unknown" value="0"/>

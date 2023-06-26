@@ -1,23 +1,24 @@
 |TOP
 clk => clk.IN1
 rst_n => rst_n.IN3
-clk_120M <= clk_120M.DB_MAX_OUTPUT_PORT_TYPE
-clk_50M <= pll_ip:PLL_mod_inst.c0
-base_gen <= base_gen.DB_MAX_OUTPUT_PORT_TYPE
-clk_inv <= clk_120M.DB_MAX_OUTPUT_PORT_TYPE
-locked <= pll_ip:PLL_mod_inst.locked
-adc_data[0] <= BPSK_Mod:Bpsk_Mod_inst.BPSK_Mod_data
-adc_data[1] <= BPSK_Mod:Bpsk_Mod_inst.BPSK_Mod_data
-adc_data[2] <= BPSK_Mod:Bpsk_Mod_inst.BPSK_Mod_data
-adc_data[3] <= BPSK_Mod:Bpsk_Mod_inst.BPSK_Mod_data
-adc_data[4] <= BPSK_Mod:Bpsk_Mod_inst.BPSK_Mod_data
-adc_data[5] <= BPSK_Mod:Bpsk_Mod_inst.BPSK_Mod_data
-adc_data[6] <= BPSK_Mod:Bpsk_Mod_inst.BPSK_Mod_data
-adc_data[7] <= BPSK_Mod:Bpsk_Mod_inst.BPSK_Mod_data
-adc_data[8] <= BPSK_Mod:Bpsk_Mod_inst.BPSK_Mod_data
-adc_data[9] <= BPSK_Mod:Bpsk_Mod_inst.BPSK_Mod_data
-adc_data[10] <= BPSK_Mod:Bpsk_Mod_inst.BPSK_Mod_data
-adc_data[11] <= BPSK_Mod:Bpsk_Mod_inst.BPSK_Mod_data
+clk_120M << clk_120M.DB_MAX_OUTPUT_PORT_TYPE
+clk_50M << pll_ip:PLL_mod_inst.c0
+base_gen2[0] << base_gen2[0].DB_MAX_OUTPUT_PORT_TYPE
+base_gen2[1] << base_gen2[1].DB_MAX_OUTPUT_PORT_TYPE
+clk_inv << clk_120M.DB_MAX_OUTPUT_PORT_TYPE
+locked << pll_ip:PLL_mod_inst.locked
+adc_data[0] << QPSK_Mod:Bpsk_Mod_inst.QPSK_Mod_data
+adc_data[1] << QPSK_Mod:Bpsk_Mod_inst.QPSK_Mod_data
+adc_data[2] << QPSK_Mod:Bpsk_Mod_inst.QPSK_Mod_data
+adc_data[3] << QPSK_Mod:Bpsk_Mod_inst.QPSK_Mod_data
+adc_data[4] << QPSK_Mod:Bpsk_Mod_inst.QPSK_Mod_data
+adc_data[5] << QPSK_Mod:Bpsk_Mod_inst.QPSK_Mod_data
+adc_data[6] << QPSK_Mod:Bpsk_Mod_inst.QPSK_Mod_data
+adc_data[7] << QPSK_Mod:Bpsk_Mod_inst.QPSK_Mod_data
+adc_data[8] << QPSK_Mod:Bpsk_Mod_inst.QPSK_Mod_data
+adc_data[9] << QPSK_Mod:Bpsk_Mod_inst.QPSK_Mod_data
+adc_data[10] << QPSK_Mod:Bpsk_Mod_inst.QPSK_Mod_data
+adc_data[11] << QPSK_Mod:Bpsk_Mod_inst.QPSK_Mod_data
 
 
 |TOP|pll_ip:PLL_mod_inst
@@ -906,7 +907,7 @@ TDI => WORD_SR.DATAA
 TDO <= WORD_SR[0].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|TOP|BPSK_Mod:Bpsk_Mod_inst
+|TOP|QPSK_Mod:Bpsk_Mod_inst
 clk => clk.IN1
 rst => cnt_I[3].ACLR
 rst => cnt_I[4].ACLR
@@ -969,22 +970,27 @@ rst => cnt_I[60].ACLR
 rst => cnt_I[61].ACLR
 rst => cnt_I[62].ACLR
 rst => cnt_I[63].ACLR
-bpsk_base_data => addr_I.OUTPUTSELECT
-BPSK_Mod_data[0] <= rom_ip:Sin_inst.q
-BPSK_Mod_data[1] <= rom_ip:Sin_inst.q
-BPSK_Mod_data[2] <= rom_ip:Sin_inst.q
-BPSK_Mod_data[3] <= rom_ip:Sin_inst.q
-BPSK_Mod_data[4] <= rom_ip:Sin_inst.q
-BPSK_Mod_data[5] <= rom_ip:Sin_inst.q
-BPSK_Mod_data[6] <= rom_ip:Sin_inst.q
-BPSK_Mod_data[7] <= rom_ip:Sin_inst.q
-BPSK_Mod_data[8] <= rom_ip:Sin_inst.q
-BPSK_Mod_data[9] <= rom_ip:Sin_inst.q
-BPSK_Mod_data[10] <= rom_ip:Sin_inst.q
-BPSK_Mod_data[11] <= rom_ip:Sin_inst.q
+qpsk_base_data[0] => addr_I.OUTPUTSELECT
+qpsk_base_data[0] => addr_I.OUTPUTSELECT
+qpsk_base_data[0] => addr_I.OUTPUTSELECT
+qpsk_base_data[0] => addr_I.OUTPUTSELECT
+qpsk_base_data[1] => addr_I.OUTPUTSELECT
+qpsk_base_data[1] => addr_I.OUTPUTSELECT
+QPSK_Mod_data[0] <= rom_ip:Sin_inst.q
+QPSK_Mod_data[1] <= rom_ip:Sin_inst.q
+QPSK_Mod_data[2] <= rom_ip:Sin_inst.q
+QPSK_Mod_data[3] <= rom_ip:Sin_inst.q
+QPSK_Mod_data[4] <= rom_ip:Sin_inst.q
+QPSK_Mod_data[5] <= rom_ip:Sin_inst.q
+QPSK_Mod_data[6] <= rom_ip:Sin_inst.q
+QPSK_Mod_data[7] <= rom_ip:Sin_inst.q
+QPSK_Mod_data[8] <= rom_ip:Sin_inst.q
+QPSK_Mod_data[9] <= rom_ip:Sin_inst.q
+QPSK_Mod_data[10] <= rom_ip:Sin_inst.q
+QPSK_Mod_data[11] <= rom_ip:Sin_inst.q
 
 
-|TOP|BPSK_Mod:Bpsk_Mod_inst|rom_ip:Sin_inst
+|TOP|QPSK_Mod:Bpsk_Mod_inst|rom_ip:Sin_inst
 address[0] => address[0].IN1
 address[1] => address[1].IN1
 address[2] => address[2].IN1
@@ -1012,7 +1018,7 @@ q[10] <= altsyncram:altsyncram_component.q_a
 q[11] <= altsyncram:altsyncram_component.q_a
 
 
-|TOP|BPSK_Mod:Bpsk_Mod_inst|rom_ip:Sin_inst|altsyncram:altsyncram_component
+|TOP|QPSK_Mod:Bpsk_Mod_inst|rom_ip:Sin_inst|altsyncram:altsyncram_component
 wren_a => ~NO_FANOUT~
 rden_a => ~NO_FANOUT~
 wren_b => ~NO_FANOUT~
@@ -1073,7 +1079,7 @@ eccstatus[1] <= <GND>
 eccstatus[2] <= <GND>
 
 
-|TOP|BPSK_Mod:Bpsk_Mod_inst|rom_ip:Sin_inst|altsyncram:altsyncram_component|altsyncram_noe1:auto_generated
+|TOP|QPSK_Mod:Bpsk_Mod_inst|rom_ip:Sin_inst|altsyncram:altsyncram_component|altsyncram_noe1:auto_generated
 address_a[0] => altsyncram_5dg2:altsyncram1.address_a[0]
 address_a[1] => altsyncram_5dg2:altsyncram1.address_a[1]
 address_a[2] => altsyncram_5dg2:altsyncram1.address_a[2]
@@ -1101,7 +1107,7 @@ q_a[10] <= altsyncram_5dg2:altsyncram1.q_a[10]
 q_a[11] <= altsyncram_5dg2:altsyncram1.q_a[11]
 
 
-|TOP|BPSK_Mod:Bpsk_Mod_inst|rom_ip:Sin_inst|altsyncram:altsyncram_component|altsyncram_noe1:auto_generated|altsyncram_5dg2:altsyncram1
+|TOP|QPSK_Mod:Bpsk_Mod_inst|rom_ip:Sin_inst|altsyncram:altsyncram_component|altsyncram_noe1:auto_generated|altsyncram_5dg2:altsyncram1
 address_a[0] => ram_block3a0.PORTAADDR
 address_a[0] => ram_block3a1.PORTAADDR
 address_a[0] => ram_block3a2.PORTAADDR
@@ -1464,7 +1470,7 @@ wren_b => ram_block3a10.PORTBWE
 wren_b => ram_block3a11.PORTBWE
 
 
-|TOP|BPSK_Mod:Bpsk_Mod_inst|rom_ip:Sin_inst|altsyncram:altsyncram_component|altsyncram_noe1:auto_generated|sld_mod_ram_rom:mgl_prim2
+|TOP|QPSK_Mod:Bpsk_Mod_inst|rom_ip:Sin_inst|altsyncram:altsyncram_component|altsyncram_noe1:auto_generated|sld_mod_ram_rom:mgl_prim2
 tck_usr <= raw_tck.DB_MAX_OUTPUT_PORT_TYPE
 address[0] <= ram_rom_addr_reg[0].DB_MAX_OUTPUT_PORT_TYPE
 address[1] <= ram_rom_addr_reg[1].DB_MAX_OUTPUT_PORT_TYPE
@@ -1597,7 +1603,7 @@ ir_out[4] <= ir_loaded_address_reg[3].DB_MAX_OUTPUT_PORT_TYPE
 tdo <= tdo.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|TOP|BPSK_Mod:Bpsk_Mod_inst|rom_ip:Sin_inst|altsyncram:altsyncram_component|altsyncram_noe1:auto_generated|sld_mod_ram_rom:mgl_prim2|sld_rom_sr:\ram_rom_logic_gen:name_gen:info_rom_sr
+|TOP|QPSK_Mod:Bpsk_Mod_inst|rom_ip:Sin_inst|altsyncram:altsyncram_component|altsyncram_noe1:auto_generated|sld_mod_ram_rom:mgl_prim2|sld_rom_sr:\ram_rom_logic_gen:name_gen:info_rom_sr
 ROM_DATA[0] => Mux3.IN131
 ROM_DATA[1] => Mux2.IN131
 ROM_DATA[2] => Mux1.IN131
@@ -1711,9 +1717,12 @@ TDI => WORD_SR.DATAA
 TDO <= WORD_SR[0].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|TOP|Base_Gen:Base_Gen_inst
-clk => base_data_reg.CLK
-rst => base_data_reg.ACLR
-base_data <= base_data_reg.DB_MAX_OUTPUT_PORT_TYPE
+|TOP|Base_Gen2:Base_Gen_inst
+clk => base_data_reg[0].CLK
+clk => base_data_reg[1].CLK
+rst => base_data_reg[0].ACLR
+rst => base_data_reg[1].ACLR
+base_data[0] <= base_data_reg[0].DB_MAX_OUTPUT_PORT_TYPE
+base_data[1] <= base_data_reg[1].DB_MAX_OUTPUT_PORT_TYPE
 
 
