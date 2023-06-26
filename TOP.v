@@ -6,21 +6,22 @@ module TOP(
 		output      base_gen,
 		output 		clk_inv,
 		output 		locked,
-		output 		[11:0] FSK_Mod_data
+		output 		[11:0] adc_data
+
 );
 
 
 
 
 assign clk_inv = ~clk_120M;
-wire clk_1M;
+wire clk_100k;
 
 pll_ip PLL_mod_inst(
 	.areset(~rst_n),
 	.inclk0(clk),
 	.c0(clk_50M),
 	.c1(clk_120M),
-	.c2(clk_1M),
+	.c2(clk_100k),
 	.locked(locked)
 );
 
@@ -35,19 +36,28 @@ DDS_Mod  #(64'd153722867280913000)DDS_Mod_inst1(
 );
 //------------------------------------//
 
-//----------------10kHz-----------------//
-wire    [11:0]  car_data_10k;
-//10kHz_Carrier
-DDS_Mod  #(64'd1537228672809130)DDS_Mod_inst2(
-    .clk        (clk_120M),
-    .rst_n      (rst_n),
-	.sin		(car_data_10k)
+//---------------BPSK-----------------//
+
+BPSK_Mod Bpsk_Mod_inst(
+	.clk(clk_120M),
+	.rst(rst_n),
+	.bpsk_base_data(base_gen),
+	.BPSK_Mod_data(adc_data),
+
 );
+
+
+
+
 //------------------------------------//
+
+
+
+
 
 //----------------FSK-----------------//
 //wire [11:0] FSK_Mod_data;
-
+/*
 FSK_Mod FSK_Mod_inst(
 	.clk (clk_120M),
 	.rst(rst_n),
@@ -59,7 +69,7 @@ FSK_Mod FSK_Mod_inst(
 
 wire ASK_Mod_data;
 //----------------ASK-----------------//
-/*
+
 ASK_Mod ASK_Mod_inst(
 	.clk (clk_120M),
 	.rst (rst_n),
@@ -74,7 +84,7 @@ ASK_Mod ASK_Mod_inst(
 
 //--------------Base_Gen--------------//
 Base_Gen Base_Gen_inst(
-	.clk(clk_1M),
+	.clk(clk_100k),
 	.rst(rst_n),
 	.base_data(base_gen)
 
