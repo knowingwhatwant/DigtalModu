@@ -1,6 +1,6 @@
 <sld_project_info>
   <project>
-    <hash md5_digest_80b="3618f075d12e5b060900"/>
+    <hash md5_digest_80b="7564a6a082e8d976fa6d"/>
   </project>
   <file_info>
     <file device="EP4CE10E22C8" path="Digital_Modu.sof" usercode="0xFFFFFFFF"/>
@@ -87,7 +87,7 @@
         <port name="jtag.bp.DDS_Mod_inst1_Sin_inst_altsyncram_component_auto_generated_mgl_prim2_tdo"/>
       </outputs>
     </node>
-    <node hpath="QPSK_Mod:Bpsk_Mod_inst|rom_ip:Sin_inst|altsyncram:altsyncram_component|altsyncram_noe1:auto_generated|sld_mod_ram_rom:mgl_prim2" instance_id="1" mfg_id="110" node_id="3" sld_node_info="0x8186E01" version="1">
+    <node hpath="AM_Mod:Am_Mod_inst|rom_ip:Sin_inst_Carrier|altsyncram:altsyncram_component|altsyncram_noe1:auto_generated|sld_mod_ram_rom:mgl_prim2" instance_id="1" mfg_id="110" node_id="3" sld_node_info="0x8186E01" version="1">
       <parameters>
         <parameter name="SLD_NODE_INFO" type="dec" value="135818752"/>
         <parameter name="SLD_AUTO_INSTANCE_INDEX" type="string" value="yes"/>
@@ -104,33 +104,33 @@
         <parameter name="node_name" type="unknown" value="1936289280"/>
       </parameters>
       <inputs>
-        <port name="data_read[0]" source="QPSK_Mod:Bpsk_Mod_inst|rom_ip:Sin_inst|altsyncram:altsyncram_component|altsyncram_noe1:auto_generated|altsyncram_5dg2:altsyncram1|q_b[0]"/>
-        <port name="data_read[1]" source="QPSK_Mod:Bpsk_Mod_inst|rom_ip:Sin_inst|altsyncram:altsyncram_component|altsyncram_noe1:auto_generated|altsyncram_5dg2:altsyncram1|q_b[1]"/>
-        <port name="data_read[2]" source="QPSK_Mod:Bpsk_Mod_inst|rom_ip:Sin_inst|altsyncram:altsyncram_component|altsyncram_noe1:auto_generated|altsyncram_5dg2:altsyncram1|q_b[2]"/>
-        <port name="data_read[3]" source="QPSK_Mod:Bpsk_Mod_inst|rom_ip:Sin_inst|altsyncram:altsyncram_component|altsyncram_noe1:auto_generated|altsyncram_5dg2:altsyncram1|q_b[3]"/>
-        <port name="data_read[4]" source="QPSK_Mod:Bpsk_Mod_inst|rom_ip:Sin_inst|altsyncram:altsyncram_component|altsyncram_noe1:auto_generated|altsyncram_5dg2:altsyncram1|q_b[4]"/>
-        <port name="data_read[5]" source="QPSK_Mod:Bpsk_Mod_inst|rom_ip:Sin_inst|altsyncram:altsyncram_component|altsyncram_noe1:auto_generated|altsyncram_5dg2:altsyncram1|q_b[5]"/>
-        <port name="data_read[6]" source="QPSK_Mod:Bpsk_Mod_inst|rom_ip:Sin_inst|altsyncram:altsyncram_component|altsyncram_noe1:auto_generated|altsyncram_5dg2:altsyncram1|q_b[6]"/>
-        <port name="data_read[7]" source="QPSK_Mod:Bpsk_Mod_inst|rom_ip:Sin_inst|altsyncram:altsyncram_component|altsyncram_noe1:auto_generated|altsyncram_5dg2:altsyncram1|q_b[7]"/>
-        <port name="data_read[8]" source="QPSK_Mod:Bpsk_Mod_inst|rom_ip:Sin_inst|altsyncram:altsyncram_component|altsyncram_noe1:auto_generated|altsyncram_5dg2:altsyncram1|q_b[8]"/>
-        <port name="data_read[9]" source="QPSK_Mod:Bpsk_Mod_inst|rom_ip:Sin_inst|altsyncram:altsyncram_component|altsyncram_noe1:auto_generated|altsyncram_5dg2:altsyncram1|q_b[9]"/>
-        <port name="data_read[10]" source="QPSK_Mod:Bpsk_Mod_inst|rom_ip:Sin_inst|altsyncram:altsyncram_component|altsyncram_noe1:auto_generated|altsyncram_5dg2:altsyncram1|q_b[10]"/>
-        <port name="data_read[11]" source="QPSK_Mod:Bpsk_Mod_inst|rom_ip:Sin_inst|altsyncram:altsyncram_component|altsyncram_noe1:auto_generated|altsyncram_5dg2:altsyncram1|q_b[11]"/>
-        <port name="jtag.bp.Bpsk_Mod_inst_Sin_inst_altsyncram_component_auto_generated_mgl_prim2_raw_tck" source="jtag.bp.Bpsk_Mod_inst_Sin_inst_altsyncram_component_auto_generated_mgl_prim2_raw_tck"/>
-        <port name="jtag.bp.Bpsk_Mod_inst_Sin_inst_altsyncram_component_auto_generated_mgl_prim2_tdi" source="jtag.bp.Bpsk_Mod_inst_Sin_inst_altsyncram_component_auto_generated_mgl_prim2_tdi"/>
-        <port name="jtag.bp.Bpsk_Mod_inst_Sin_inst_altsyncram_component_auto_generated_mgl_prim2_usr1" source="jtag.bp.Bpsk_Mod_inst_Sin_inst_altsyncram_component_auto_generated_mgl_prim2_usr1"/>
-        <port name="jtag.bp.Bpsk_Mod_inst_Sin_inst_altsyncram_component_auto_generated_mgl_prim2_jtag_state_cdr" source="jtag.bp.Bpsk_Mod_inst_Sin_inst_altsyncram_component_auto_generated_mgl_prim2_jtag_state_cdr"/>
-        <port name="jtag.bp.Bpsk_Mod_inst_Sin_inst_altsyncram_component_auto_generated_mgl_prim2_jtag_state_sdr" source="jtag.bp.Bpsk_Mod_inst_Sin_inst_altsyncram_component_auto_generated_mgl_prim2_jtag_state_sdr"/>
-        <port name="jtag.bp.Bpsk_Mod_inst_Sin_inst_altsyncram_component_auto_generated_mgl_prim2_jtag_state_e1dr" source="jtag.bp.Bpsk_Mod_inst_Sin_inst_altsyncram_component_auto_generated_mgl_prim2_jtag_state_e1dr"/>
-        <port name="jtag.bp.Bpsk_Mod_inst_Sin_inst_altsyncram_component_auto_generated_mgl_prim2_jtag_state_udr" source="jtag.bp.Bpsk_Mod_inst_Sin_inst_altsyncram_component_auto_generated_mgl_prim2_jtag_state_udr"/>
-        <port name="jtag.bp.Bpsk_Mod_inst_Sin_inst_altsyncram_component_auto_generated_mgl_prim2_jtag_state_uir" source="jtag.bp.Bpsk_Mod_inst_Sin_inst_altsyncram_component_auto_generated_mgl_prim2_jtag_state_uir"/>
-        <port name="jtag.bp.Bpsk_Mod_inst_Sin_inst_altsyncram_component_auto_generated_mgl_prim2_clr" source="jtag.bp.Bpsk_Mod_inst_Sin_inst_altsyncram_component_auto_generated_mgl_prim2_clr"/>
-        <port name="jtag.bp.Bpsk_Mod_inst_Sin_inst_altsyncram_component_auto_generated_mgl_prim2_ena" source="jtag.bp.Bpsk_Mod_inst_Sin_inst_altsyncram_component_auto_generated_mgl_prim2_ena"/>
-        <port name="jtag.bp.Bpsk_Mod_inst_Sin_inst_altsyncram_component_auto_generated_mgl_prim2_ir_in_0_" source="jtag.bp.Bpsk_Mod_inst_Sin_inst_altsyncram_component_auto_generated_mgl_prim2_ir_in_0_"/>
-        <port name="jtag.bp.Bpsk_Mod_inst_Sin_inst_altsyncram_component_auto_generated_mgl_prim2_ir_in_1_" source="jtag.bp.Bpsk_Mod_inst_Sin_inst_altsyncram_component_auto_generated_mgl_prim2_ir_in_1_"/>
-        <port name="jtag.bp.Bpsk_Mod_inst_Sin_inst_altsyncram_component_auto_generated_mgl_prim2_ir_in_2_" source="jtag.bp.Bpsk_Mod_inst_Sin_inst_altsyncram_component_auto_generated_mgl_prim2_ir_in_2_"/>
-        <port name="jtag.bp.Bpsk_Mod_inst_Sin_inst_altsyncram_component_auto_generated_mgl_prim2_ir_in_3_" source="jtag.bp.Bpsk_Mod_inst_Sin_inst_altsyncram_component_auto_generated_mgl_prim2_ir_in_3_"/>
-        <port name="jtag.bp.Bpsk_Mod_inst_Sin_inst_altsyncram_component_auto_generated_mgl_prim2_ir_in_4_" source="jtag.bp.Bpsk_Mod_inst_Sin_inst_altsyncram_component_auto_generated_mgl_prim2_ir_in_4_"/>
+        <port name="data_read[0]" source="AM_Mod:Am_Mod_inst|rom_ip:Sin_inst_Carrier|altsyncram:altsyncram_component|altsyncram_noe1:auto_generated|altsyncram_5dg2:altsyncram1|q_b[0]"/>
+        <port name="data_read[1]" source="AM_Mod:Am_Mod_inst|rom_ip:Sin_inst_Carrier|altsyncram:altsyncram_component|altsyncram_noe1:auto_generated|altsyncram_5dg2:altsyncram1|q_b[1]"/>
+        <port name="data_read[2]" source="AM_Mod:Am_Mod_inst|rom_ip:Sin_inst_Carrier|altsyncram:altsyncram_component|altsyncram_noe1:auto_generated|altsyncram_5dg2:altsyncram1|q_b[2]"/>
+        <port name="data_read[3]" source="AM_Mod:Am_Mod_inst|rom_ip:Sin_inst_Carrier|altsyncram:altsyncram_component|altsyncram_noe1:auto_generated|altsyncram_5dg2:altsyncram1|q_b[3]"/>
+        <port name="data_read[4]" source="AM_Mod:Am_Mod_inst|rom_ip:Sin_inst_Carrier|altsyncram:altsyncram_component|altsyncram_noe1:auto_generated|altsyncram_5dg2:altsyncram1|q_b[4]"/>
+        <port name="data_read[5]" source="AM_Mod:Am_Mod_inst|rom_ip:Sin_inst_Carrier|altsyncram:altsyncram_component|altsyncram_noe1:auto_generated|altsyncram_5dg2:altsyncram1|q_b[5]"/>
+        <port name="data_read[6]" source="AM_Mod:Am_Mod_inst|rom_ip:Sin_inst_Carrier|altsyncram:altsyncram_component|altsyncram_noe1:auto_generated|altsyncram_5dg2:altsyncram1|q_b[6]"/>
+        <port name="data_read[7]" source="AM_Mod:Am_Mod_inst|rom_ip:Sin_inst_Carrier|altsyncram:altsyncram_component|altsyncram_noe1:auto_generated|altsyncram_5dg2:altsyncram1|q_b[7]"/>
+        <port name="data_read[8]" source="AM_Mod:Am_Mod_inst|rom_ip:Sin_inst_Carrier|altsyncram:altsyncram_component|altsyncram_noe1:auto_generated|altsyncram_5dg2:altsyncram1|q_b[8]"/>
+        <port name="data_read[9]" source="AM_Mod:Am_Mod_inst|rom_ip:Sin_inst_Carrier|altsyncram:altsyncram_component|altsyncram_noe1:auto_generated|altsyncram_5dg2:altsyncram1|q_b[9]"/>
+        <port name="data_read[10]" source="AM_Mod:Am_Mod_inst|rom_ip:Sin_inst_Carrier|altsyncram:altsyncram_component|altsyncram_noe1:auto_generated|altsyncram_5dg2:altsyncram1|q_b[10]"/>
+        <port name="data_read[11]" source="AM_Mod:Am_Mod_inst|rom_ip:Sin_inst_Carrier|altsyncram:altsyncram_component|altsyncram_noe1:auto_generated|altsyncram_5dg2:altsyncram1|q_b[11]"/>
+        <port name="jtag.bp.Am_Mod_inst_Sin_inst_Carrier_altsyncram_component_auto_generated_mgl_prim2_raw_tck" source="jtag.bp.Am_Mod_inst_Sin_inst_Carrier_altsyncram_component_auto_generated_mgl_prim2_raw_tck"/>
+        <port name="jtag.bp.Am_Mod_inst_Sin_inst_Carrier_altsyncram_component_auto_generated_mgl_prim2_tdi" source="jtag.bp.Am_Mod_inst_Sin_inst_Carrier_altsyncram_component_auto_generated_mgl_prim2_tdi"/>
+        <port name="jtag.bp.Am_Mod_inst_Sin_inst_Carrier_altsyncram_component_auto_generated_mgl_prim2_usr1" source="jtag.bp.Am_Mod_inst_Sin_inst_Carrier_altsyncram_component_auto_generated_mgl_prim2_usr1"/>
+        <port name="jtag.bp.Am_Mod_inst_Sin_inst_Carrier_altsyncram_component_auto_generated_mgl_prim2_jtag_state_cdr" source="jtag.bp.Am_Mod_inst_Sin_inst_Carrier_altsyncram_component_auto_generated_mgl_prim2_jtag_state_cdr"/>
+        <port name="jtag.bp.Am_Mod_inst_Sin_inst_Carrier_altsyncram_component_auto_generated_mgl_prim2_jtag_state_sdr" source="jtag.bp.Am_Mod_inst_Sin_inst_Carrier_altsyncram_component_auto_generated_mgl_prim2_jtag_state_sdr"/>
+        <port name="jtag.bp.Am_Mod_inst_Sin_inst_Carrier_altsyncram_component_auto_generated_mgl_prim2_jtag_state_e1dr" source="jtag.bp.Am_Mod_inst_Sin_inst_Carrier_altsyncram_component_auto_generated_mgl_prim2_jtag_state_e1dr"/>
+        <port name="jtag.bp.Am_Mod_inst_Sin_inst_Carrier_altsyncram_component_auto_generated_mgl_prim2_jtag_state_udr" source="jtag.bp.Am_Mod_inst_Sin_inst_Carrier_altsyncram_component_auto_generated_mgl_prim2_jtag_state_udr"/>
+        <port name="jtag.bp.Am_Mod_inst_Sin_inst_Carrier_altsyncram_component_auto_generated_mgl_prim2_jtag_state_uir" source="jtag.bp.Am_Mod_inst_Sin_inst_Carrier_altsyncram_component_auto_generated_mgl_prim2_jtag_state_uir"/>
+        <port name="jtag.bp.Am_Mod_inst_Sin_inst_Carrier_altsyncram_component_auto_generated_mgl_prim2_clr" source="jtag.bp.Am_Mod_inst_Sin_inst_Carrier_altsyncram_component_auto_generated_mgl_prim2_clr"/>
+        <port name="jtag.bp.Am_Mod_inst_Sin_inst_Carrier_altsyncram_component_auto_generated_mgl_prim2_ena" source="jtag.bp.Am_Mod_inst_Sin_inst_Carrier_altsyncram_component_auto_generated_mgl_prim2_ena"/>
+        <port name="jtag.bp.Am_Mod_inst_Sin_inst_Carrier_altsyncram_component_auto_generated_mgl_prim2_ir_in_0_" source="jtag.bp.Am_Mod_inst_Sin_inst_Carrier_altsyncram_component_auto_generated_mgl_prim2_ir_in_0_"/>
+        <port name="jtag.bp.Am_Mod_inst_Sin_inst_Carrier_altsyncram_component_auto_generated_mgl_prim2_ir_in_1_" source="jtag.bp.Am_Mod_inst_Sin_inst_Carrier_altsyncram_component_auto_generated_mgl_prim2_ir_in_1_"/>
+        <port name="jtag.bp.Am_Mod_inst_Sin_inst_Carrier_altsyncram_component_auto_generated_mgl_prim2_ir_in_2_" source="jtag.bp.Am_Mod_inst_Sin_inst_Carrier_altsyncram_component_auto_generated_mgl_prim2_ir_in_2_"/>
+        <port name="jtag.bp.Am_Mod_inst_Sin_inst_Carrier_altsyncram_component_auto_generated_mgl_prim2_ir_in_3_" source="jtag.bp.Am_Mod_inst_Sin_inst_Carrier_altsyncram_component_auto_generated_mgl_prim2_ir_in_3_"/>
+        <port name="jtag.bp.Am_Mod_inst_Sin_inst_Carrier_altsyncram_component_auto_generated_mgl_prim2_ir_in_4_" source="jtag.bp.Am_Mod_inst_Sin_inst_Carrier_altsyncram_component_auto_generated_mgl_prim2_ir_in_4_"/>
       </inputs>
       <outputs>
         <port name="tck_usr"/>
@@ -159,12 +159,12 @@
         <port name="data_write[9]"/>
         <port name="data_write[10]"/>
         <port name="data_write[11]"/>
-        <port name="jtag.bp.Bpsk_Mod_inst_Sin_inst_altsyncram_component_auto_generated_mgl_prim2_ir_out_0_"/>
-        <port name="jtag.bp.Bpsk_Mod_inst_Sin_inst_altsyncram_component_auto_generated_mgl_prim2_ir_out_1_"/>
-        <port name="jtag.bp.Bpsk_Mod_inst_Sin_inst_altsyncram_component_auto_generated_mgl_prim2_ir_out_2_"/>
-        <port name="jtag.bp.Bpsk_Mod_inst_Sin_inst_altsyncram_component_auto_generated_mgl_prim2_ir_out_3_"/>
-        <port name="jtag.bp.Bpsk_Mod_inst_Sin_inst_altsyncram_component_auto_generated_mgl_prim2_ir_out_4_"/>
-        <port name="jtag.bp.Bpsk_Mod_inst_Sin_inst_altsyncram_component_auto_generated_mgl_prim2_tdo"/>
+        <port name="jtag.bp.Am_Mod_inst_Sin_inst_Carrier_altsyncram_component_auto_generated_mgl_prim2_ir_out_0_"/>
+        <port name="jtag.bp.Am_Mod_inst_Sin_inst_Carrier_altsyncram_component_auto_generated_mgl_prim2_ir_out_1_"/>
+        <port name="jtag.bp.Am_Mod_inst_Sin_inst_Carrier_altsyncram_component_auto_generated_mgl_prim2_ir_out_2_"/>
+        <port name="jtag.bp.Am_Mod_inst_Sin_inst_Carrier_altsyncram_component_auto_generated_mgl_prim2_ir_out_3_"/>
+        <port name="jtag.bp.Am_Mod_inst_Sin_inst_Carrier_altsyncram_component_auto_generated_mgl_prim2_ir_out_4_"/>
+        <port name="jtag.bp.Am_Mod_inst_Sin_inst_Carrier_altsyncram_component_auto_generated_mgl_prim2_tdo"/>
       </outputs>
     </node>
     <node hpath="sld_signaltap:auto_signaltap_0" instance_id="0" mfg_id="110" node_id="0" sld_node_info="0x30006E00" version="6">
@@ -174,14 +174,14 @@
         <parameter name="SLD_IP_VERSION" type="dec" value="6"/>
         <parameter name="SLD_IP_MINOR_VERSION" type="dec" value="0"/>
         <parameter name="SLD_COMMON_IP_VERSION" type="dec" value="0"/>
-        <parameter name="sld_data_bits" type="unknown" value="14"/>
-        <parameter name="sld_trigger_bits" type="unknown" value="14"/>
+        <parameter name="sld_data_bits" type="unknown" value="48"/>
+        <parameter name="sld_trigger_bits" type="unknown" value="48"/>
         <parameter name="SLD_NODE_CRC_BITS" type="dec" value="32"/>
-        <parameter name="sld_node_crc_hiword" type="unknown" value="7000"/>
-        <parameter name="sld_node_crc_loword" type="unknown" value="38201"/>
+        <parameter name="sld_node_crc_hiword" type="unknown" value="33247"/>
+        <parameter name="sld_node_crc_loword" type="unknown" value="30359"/>
         <parameter name="SLD_INCREMENTAL_ROUTING" type="dec" value="0"/>
-        <parameter name="sld_sample_depth" type="unknown" value="16384"/>
-        <parameter name="sld_segment_size" type="unknown" value="16384"/>
+        <parameter name="sld_sample_depth" type="unknown" value="4096"/>
+        <parameter name="sld_segment_size" type="unknown" value="4096"/>
         <parameter name="sld_ram_block_type" type="unknown" value="AUTO"/>
         <parameter name="sld_state_bits" type="unknown" value="11"/>
         <parameter name="sld_buffer_full_stop" type="unknown" value="1"/>
@@ -206,8 +206,8 @@
         <parameter name="SLD_ADVANCED_TRIGGER_8" type="string" value="NONE"/>
         <parameter name="SLD_ADVANCED_TRIGGER_9" type="string" value="NONE"/>
         <parameter name="SLD_ADVANCED_TRIGGER_10" type="string" value="NONE"/>
-        <parameter name="sld_inversion_mask_length" type="unknown" value="70"/>
-        <parameter name="sld_inversion_mask" type="unknown" value="0000000000000000000000000000000000000000000000000000000000000000000000"/>
+        <parameter name="sld_inversion_mask_length" type="unknown" value="170"/>
+        <parameter name="sld_inversion_mask" type="unknown" value="00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"/>
         <parameter name="sld_power_up_trigger" type="unknown" value="0"/>
         <parameter name="SLD_STATE_FLOW_MGR_ENTITY" type="string" value="state_flow_mgr_entity.vhd"/>
         <parameter name="sld_state_flow_use_generated" type="unknown" value="0"/>

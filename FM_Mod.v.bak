@@ -1,0 +1,60 @@
+module FM_Mod#(parameter Freq_Word = 64'd30744573456182600 )        //最大频偏200kHz
+(
+    input clk,
+    input rst,
+    input [11:0]adc_data,
+    output [11:0]FM_Mod_data
+);
+
+
+
+parameter Freq_I = 64'd153722867280913000 ;		//carrier 1MHz Sampling freqency 120M
+
+parameter cnt_width = 9'd64;
+
+//-------------计算频偏控制字--------------//
+wire		[43:0]	mult_data;
+wire		[31:0]	Freq_Offset;
+wire        [11:0]  cov_adc_data;
+
+assign cov_adc_data = (adc_data >= 12'd2047) ? (adc_data - 12'd2047) : (12'd2047 - adc_data);
+//cov_adc_data = 12'd2047;
+
+
+mul_ip_11_64 MULT_inst(
+   	.clock	    (clk),
+   	.dataa		(cov_adc_data),
+   	.datab		(Freq_Word),
+   	.result		(mult_data)
+);
+
+assign	Freq_Offset = mult_data[75:12]<<1;	//移位
+
+//---------------------------------------//
+reg     [cnt_width-1:0]cnt_I;
+wire    [11:0]   addr_I;
+always @(posedge clk or negedge rst_n) begin
+	if(!rst_n)	begin
+		cnt_I <= 0;
+	end
+	else	if(adc_data >= 12'd2047)begin
+	    cnt_I <= cnt_I + Freq_I + Freq_Offset;
+	end
+	else	if(adc_data <= 12'd2047)begin
+	    cnt_I <= cnt_I + Freq_I - Freq_Offset;
+	end
+end
+
+assign  addr_I = cnt_I[cnt_width-1:cnt_width-12];
+
+//----------------ROM核-----------------//
+rom_ip				Sin_inst(
+  	.clock		    (clk),
+  	.address		(addr_I),
+  	.q				(FM_Mod_data)
+);
+
+endmodule
+
+
+
