@@ -1,4 +1,4 @@
 v1
-DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,AM_Mod:Am_Mod_inst|mul_ip_12_12:MULT_inst|lpm_mult:lpm_mult_component|mult_9dp:auto_generated|mac_out2,
 DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,AM_Mod:Am_Mod_inst|mul_ip_12_12:MULT_ScaledAdc_inst|lpm_mult:lpm_mult_component|mult_9dp:auto_generated|mac_out2,
+DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,AM_Mod:Am_Mod_inst|mul_ip_12_12:MULT_inst|lpm_mult:lpm_mult_component|mult_9dp:auto_generated|mac_out2,
 PORT_SWAPPING,PORT_SWAPPING_FINISHED,AM_Mod:Am_Mod_inst|mul_ip_12_12:MULT_ScaledAdc_inst|lpm_mult:lpm_mult_component|mult_9dp:auto_generated|mac_mult1,

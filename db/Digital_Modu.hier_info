@@ -2,10 +2,9 @@
 clk => clk.IN1
 rst_n => rst_n.IN2
 clk_120M << clk_120M.DB_MAX_OUTPUT_PORT_TYPE
-clk_50M << pll_ip:PLL_mod_inst.c0
 base_gen2[0] << <GND>
 base_gen2[1] << <GND>
-clk_inv << clk_120M.DB_MAX_OUTPUT_PORT_TYPE
+clk_inv << clk_inv.DB_MAX_OUTPUT_PORT_TYPE
 locked << pll_ip:PLL_mod_inst.locked
 adc_data[0] << AM_Mod:Am_Mod_inst.AM_Mod_data
 adc_data[1] << AM_Mod:Am_Mod_inst.AM_Mod_data

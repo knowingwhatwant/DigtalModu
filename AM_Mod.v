@@ -39,7 +39,7 @@ rom_ip				Sin_inst_Carrier(
 
 //------Bias of modulation signal-----//
 
-wire [11:0] Modu_bias = 12'd1023-ma;		//center bias for scaled signal
+wire [11:0] Modu_bias = 12'd1024-ma;		//center bias for scaled signal
 //wire [11:0] Peak_data =(ma<<1);
 
 //wire [11:0] Cov_adc_data;
@@ -66,7 +66,6 @@ wire		[23:0]	mult_data;
 //wire      [11:0]  Cov_carrier_data;
 reg	[11:0] Cov_carrier_data_reg;
 //assign Cov_carrier_data = (carrier_data >=12'd2048)? (carrier_data - 12'd2048):(12'd2048 - carrier_data);
-
 always@(posedge clk or negedge rst)
 begin
 	if(!rst)begin
@@ -82,6 +81,9 @@ begin
 		Cov_carrier_data_reg <= 12'd2048 - carrier_data;
 	end
 end
+
+assign Cov_carrier_data = Cov_carrier_data_reg;
+
 
 assign Cov_carrier_data = Cov_carrier_data_reg;
 
@@ -115,6 +117,9 @@ begin
 		AM_Mod_data_reg <= 12'd2048 - mult_data[23:12];
 	end
 end
+
+assign AM_Mod_data = AM_Mod_data_reg;
+
 
 assign AM_Mod_data = AM_Mod_data_reg;
 

@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Digital_Modu
-Thu Jun 29 01:57:38 2023
+Fri Jun 30 14:32:45 2023
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Full Version
 
 
@@ -16,31 +16,30 @@ Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Full Version
   8. Analysis & Synthesis RAM Summary
   9. Analysis & Synthesis DSP Block Usage Summary
  10. Analysis & Synthesis IP Cores Summary
- 11. Registers Removed During Synthesis
- 12. General Register Statistics
- 13. Inverted Register Statistics
- 14. Multiplexer Restructuring Statistics (Restructuring Performed)
- 15. Source assignments for DDS_Mod:DDS_Mod_inst1|rom_ip:Sin_inst|altsyncram:altsyncram_component|altsyncram_noe1:auto_generated|altsyncram_5dg2:altsyncram1
- 16. Source assignments for AM_Mod:Am_Mod_inst|rom_ip:Sin_inst_Carrier|altsyncram:altsyncram_component|altsyncram_noe1:auto_generated|altsyncram_5dg2:altsyncram1
- 17. Parameter Settings for User Entity Instance: pll_ip:PLL_mod_inst|altpll:altpll_component
- 18. Parameter Settings for User Entity Instance: DDS_Mod:DDS_Mod_inst1
- 19. Parameter Settings for User Entity Instance: DDS_Mod:DDS_Mod_inst1|rom_ip:Sin_inst|altsyncram:altsyncram_component
- 20. Parameter Settings for User Entity Instance: AM_Mod:Am_Mod_inst
- 21. Parameter Settings for User Entity Instance: AM_Mod:Am_Mod_inst|rom_ip:Sin_inst_Carrier|altsyncram:altsyncram_component
- 22. Parameter Settings for User Entity Instance: AM_Mod:Am_Mod_inst|mul_ip_12_12:MULT_ScaledAdc_inst|lpm_mult:lpm_mult_component
- 23. Parameter Settings for User Entity Instance: AM_Mod:Am_Mod_inst|mul_ip_12_12:MULT_inst|lpm_mult:lpm_mult_component
- 24. Parameter Settings for Inferred Entity Instance: sld_signaltap:auto_signaltap_0
- 25. altpll Parameter Settings by Entity Instance
- 26. altsyncram Parameter Settings by Entity Instance
- 27. lpm_mult Parameter Settings by Entity Instance
- 28. Port Connectivity Checks: "AM_Mod:Am_Mod_inst|mul_ip_12_12:MULT_inst"
- 29. Port Connectivity Checks: "AM_Mod:Am_Mod_inst|mul_ip_12_12:MULT_ScaledAdc_inst"
- 30. Port Connectivity Checks: "pll_ip:PLL_mod_inst"
- 31. SignalTap II Logic Analyzer Settings
- 32. In-System Memory Content Editor Settings
- 33. Elapsed Time Per Partition
- 34. Connections to In-System Debugging Instance "auto_signaltap_0"
- 35. Analysis & Synthesis Messages
+ 11. General Register Statistics
+ 12. Inverted Register Statistics
+ 13. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 14. Source assignments for DDS_Mod:DDS_Mod_inst1|rom_ip:Sin_inst|altsyncram:altsyncram_component|altsyncram_noe1:auto_generated|altsyncram_5dg2:altsyncram1
+ 15. Source assignments for AM_Mod:Am_Mod_inst|rom_ip:Sin_inst_Carrier|altsyncram:altsyncram_component|altsyncram_noe1:auto_generated|altsyncram_5dg2:altsyncram1
+ 16. Parameter Settings for User Entity Instance: pll_ip:PLL_mod_inst|altpll:altpll_component
+ 17. Parameter Settings for User Entity Instance: DDS_Mod:DDS_Mod_inst1
+ 18. Parameter Settings for User Entity Instance: DDS_Mod:DDS_Mod_inst1|rom_ip:Sin_inst|altsyncram:altsyncram_component
+ 19. Parameter Settings for User Entity Instance: AM_Mod:Am_Mod_inst
+ 20. Parameter Settings for User Entity Instance: AM_Mod:Am_Mod_inst|rom_ip:Sin_inst_Carrier|altsyncram:altsyncram_component
+ 21. Parameter Settings for User Entity Instance: AM_Mod:Am_Mod_inst|mul_ip_12_12:MULT_ScaledAdc_inst|lpm_mult:lpm_mult_component
+ 22. Parameter Settings for User Entity Instance: AM_Mod:Am_Mod_inst|mul_ip_12_12:MULT_inst|lpm_mult:lpm_mult_component
+ 23. Parameter Settings for Inferred Entity Instance: sld_signaltap:auto_signaltap_0
+ 24. altpll Parameter Settings by Entity Instance
+ 25. altsyncram Parameter Settings by Entity Instance
+ 26. lpm_mult Parameter Settings by Entity Instance
+ 27. Port Connectivity Checks: "AM_Mod:Am_Mod_inst|mul_ip_12_12:MULT_inst"
+ 28. Port Connectivity Checks: "AM_Mod:Am_Mod_inst|mul_ip_12_12:MULT_ScaledAdc_inst"
+ 29. Port Connectivity Checks: "pll_ip:PLL_mod_inst"
+ 30. SignalTap II Logic Analyzer Settings
+ 31. In-System Memory Content Editor Settings
+ 32. Elapsed Time Per Partition
+ 33. Connections to In-System Debugging Instance "auto_signaltap_0"
+ 34. Analysis & Synthesis Messages
 
 
 
@@ -66,16 +65,16 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Jun 29 01:57:38 2023       ;
+; Analysis & Synthesis Status        ; Successful - Fri Jun 30 14:32:45 2023       ;
 ; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Full Version ;
 ; Revision Name                      ; Digital_Modu                                ;
 ; Top-level Entity Name              ; TOP                                         ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 1,680                                       ;
-;     Total combinational functions  ; 1,054                                       ;
-;     Dedicated logic registers      ; 1,321                                       ;
-; Total registers                    ; 1321                                        ;
-; Total pins                         ; 56                                          ;
+; Total logic elements               ; 1,684                                       ;
+;     Total combinational functions  ; 1,055                                       ;
+;     Dedicated logic registers      ; 1,324                                       ;
+; Total registers                    ; 1324                                        ;
+; Total pins                         ; 55                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 294,912                                     ;
 ; Embedded Multiplier 9-bit elements ; 4                                           ;
@@ -267,23 +266,23 @@ applicable agreement for further details.
 +---------------------------------------------+--------------------------+
 ; Resource                                    ; Usage                    ;
 +---------------------------------------------+--------------------------+
-; Estimated Total logic elements              ; 1,680                    ;
+; Estimated Total logic elements              ; 1,684                    ;
 ;                                             ;                          ;
-; Total combinational functions               ; 1054                     ;
+; Total combinational functions               ; 1055                     ;
 ; Logic element usage by number of LUT inputs ;                          ;
-;     -- 4 input functions                    ; 391                      ;
-;     -- 3 input functions                    ; 283                      ;
-;     -- <=2 input functions                  ; 380                      ;
+;     -- 4 input functions                    ; 392                      ;
+;     -- 3 input functions                    ; 285                      ;
+;     -- <=2 input functions                  ; 378                      ;
 ;                                             ;                          ;
 ; Logic elements by mode                      ;                          ;
-;     -- normal mode                          ; 774                      ;
-;     -- arithmetic mode                      ; 280                      ;
+;     -- normal mode                          ; 778                      ;
+;     -- arithmetic mode                      ; 277                      ;
 ;                                             ;                          ;
-; Total registers                             ; 1321                     ;
-;     -- Dedicated logic registers            ; 1321                     ;
+; Total registers                             ; 1324                     ;
+;     -- Dedicated logic registers            ; 1324                     ;
 ;     -- I/O registers                        ; 0                        ;
 ;                                             ;                          ;
-; I/O pins                                    ; 56                       ;
+; I/O pins                                    ; 55                       ;
 ; Total memory bits                           ; 294912                   ;
 ; Embedded Multiplier 9-bit elements          ; 4                        ;
 ; Total PLLs                                  ; 1                        ;
@@ -291,7 +290,7 @@ applicable agreement for further details.
 ;                                             ;                          ;
 ; Maximum fan-out node                        ; altera_internal_jtag~TDO ;
 ; Maximum fan-out                             ; 743                      ;
-; Total fan-out                               ; 9432                     ;
+; Total fan-out                               ; 9442                     ;
 ; Average fan-out                             ; 3.67                     ;
 +---------------------------------------------+--------------------------+
 
@@ -301,8 +300,8 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                                                                              ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                                                                                                                                                                                                       ; Library Name ;
 +---------------------------------------------------------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
-; |TOP                                                                                                    ; 1054 (1)          ; 1321 (0)     ; 294912      ; 4            ; 0       ; 2         ; 56   ; 0            ; |TOP                                                                                                                                                                                                                                                                                                                                      ; work         ;
-;    |AM_Mod:Am_Mod_inst|                                                                                 ; 195 (127)         ; 128 (85)     ; 49152       ; 4            ; 0       ; 2         ; 0    ; 0            ; |TOP|AM_Mod:Am_Mod_inst                                                                                                                                                                                                                                                                                                                   ; work         ;
+; |TOP                                                                                                    ; 1055 (1)          ; 1324 (0)     ; 294912      ; 4            ; 0       ; 2         ; 55   ; 0            ; |TOP                                                                                                                                                                                                                                                                                                                                      ; work         ;
+;    |AM_Mod:Am_Mod_inst|                                                                                 ; 192 (124)         ; 128 (85)     ; 49152       ; 4            ; 0       ; 2         ; 0    ; 0            ; |TOP|AM_Mod:Am_Mod_inst                                                                                                                                                                                                                                                                                                                   ; work         ;
 ;       |mul_ip_12_12:MULT_ScaledAdc_inst|                                                                ; 0 (0)             ; 0 (0)        ; 0           ; 2            ; 0       ; 1         ; 0    ; 0            ; |TOP|AM_Mod:Am_Mod_inst|mul_ip_12_12:MULT_ScaledAdc_inst                                                                                                                                                                                                                                                                                  ; work         ;
 ;          |lpm_mult:lpm_mult_component|                                                                  ; 0 (0)             ; 0 (0)        ; 0           ; 2            ; 0       ; 1         ; 0    ; 0            ; |TOP|AM_Mod:Am_Mod_inst|mul_ip_12_12:MULT_ScaledAdc_inst|lpm_mult:lpm_mult_component                                                                                                                                                                                                                                                      ; work         ;
 ;             |mult_9dp:auto_generated|                                                                   ; 0 (0)             ; 0 (0)        ; 0           ; 2            ; 0       ; 1         ; 0    ; 0            ; |TOP|AM_Mod:Am_Mod_inst|mul_ip_12_12:MULT_ScaledAdc_inst|lpm_mult:lpm_mult_component|mult_9dp:auto_generated                                                                                                                                                                                                                              ; work         ;
@@ -315,7 +314,7 @@ applicable agreement for further details.
 ;                |altsyncram_5dg2:altsyncram1|                                                            ; 0 (0)             ; 0 (0)        ; 49152       ; 0            ; 0       ; 0         ; 0    ; 0            ; |TOP|AM_Mod:Am_Mod_inst|rom_ip:Sin_inst_Carrier|altsyncram:altsyncram_component|altsyncram_noe1:auto_generated|altsyncram_5dg2:altsyncram1                                                                                                                                                                                                ; work         ;
 ;                |sld_mod_ram_rom:mgl_prim2|                                                              ; 68 (46)           ; 43 (34)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TOP|AM_Mod:Am_Mod_inst|rom_ip:Sin_inst_Carrier|altsyncram:altsyncram_component|altsyncram_noe1:auto_generated|sld_mod_ram_rom:mgl_prim2                                                                                                                                                                                                  ; work         ;
 ;                   |sld_rom_sr:\ram_rom_logic_gen:name_gen:info_rom_sr|                                  ; 22 (22)           ; 9 (9)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TOP|AM_Mod:Am_Mod_inst|rom_ip:Sin_inst_Carrier|altsyncram:altsyncram_component|altsyncram_noe1:auto_generated|sld_mod_ram_rom:mgl_prim2|sld_rom_sr:\ram_rom_logic_gen:name_gen:info_rom_sr                                                                                                                                               ; work         ;
-;    |DDS_Mod:DDS_Mod_inst1|                                                                              ; 130 (62)          ; 103 (60)     ; 49152       ; 0            ; 0       ; 0         ; 0    ; 0            ; |TOP|DDS_Mod:DDS_Mod_inst1                                                                                                                                                                                                                                                                                                                ; work         ;
+;    |DDS_Mod:DDS_Mod_inst1|                                                                              ; 131 (63)          ; 106 (63)     ; 49152       ; 0            ; 0       ; 0         ; 0    ; 0            ; |TOP|DDS_Mod:DDS_Mod_inst1                                                                                                                                                                                                                                                                                                                ; work         ;
 ;       |rom_ip:Sin_inst|                                                                                 ; 68 (0)            ; 43 (0)       ; 49152       ; 0            ; 0       ; 0         ; 0    ; 0            ; |TOP|DDS_Mod:DDS_Mod_inst1|rom_ip:Sin_inst                                                                                                                                                                                                                                                                                                ; work         ;
 ;          |altsyncram:altsyncram_component|                                                              ; 68 (0)            ; 43 (0)       ; 49152       ; 0            ; 0       ; 0         ; 0    ; 0            ; |TOP|DDS_Mod:DDS_Mod_inst1|rom_ip:Sin_inst|altsyncram:altsyncram_component                                                                                                                                                                                                                                                                ; work         ;
 ;             |altsyncram_noe1:auto_generated|                                                            ; 68 (0)            ; 43 (0)       ; 49152       ; 0            ; 0       ; 0         ; 0    ; 0            ; |TOP|DDS_Mod:DDS_Mod_inst1|rom_ip:Sin_inst|altsyncram:altsyncram_component|altsyncram_noe1:auto_generated                                                                                                                                                                                                                                 ; work         ;
@@ -325,8 +324,8 @@ applicable agreement for further details.
 ;    |pll_ip:PLL_mod_inst|                                                                                ; 2 (0)             ; 1 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TOP|pll_ip:PLL_mod_inst                                                                                                                                                                                                                                                                                                                  ; work         ;
 ;       |altpll:altpll_component|                                                                         ; 2 (0)             ; 1 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TOP|pll_ip:PLL_mod_inst|altpll:altpll_component                                                                                                                                                                                                                                                                                          ; work         ;
 ;          |pll_ip_altpll:auto_generated|                                                                 ; 2 (2)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TOP|pll_ip:PLL_mod_inst|altpll:altpll_component|pll_ip_altpll:auto_generated                                                                                                                                                                                                                                                             ; work         ;
-;    |sld_hub:auto_hub|                                                                                   ; 214 (1)           ; 144 (0)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TOP|sld_hub:auto_hub                                                                                                                                                                                                                                                                                                                     ; work         ;
-;       |sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|                                                    ; 213 (174)         ; 144 (115)    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TOP|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst                                                                                                                                                                                                                                                                        ; work         ;
+;    |sld_hub:auto_hub|                                                                                   ; 217 (1)           ; 144 (0)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TOP|sld_hub:auto_hub                                                                                                                                                                                                                                                                                                                     ; work         ;
+;       |sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|                                                    ; 216 (177)         ; 144 (115)    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TOP|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst                                                                                                                                                                                                                                                                        ; work         ;
 ;          |sld_rom_sr:hub_info_reg|                                                                      ; 22 (22)           ; 10 (10)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TOP|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|sld_rom_sr:hub_info_reg                                                                                                                                                                                                                                                ; work         ;
 ;          |sld_shadow_jsm:shadow_jsm|                                                                    ; 17 (17)           ; 19 (19)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TOP|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|sld_shadow_jsm:shadow_jsm                                                                                                                                                                                                                                              ; work         ;
 ;    |sld_signaltap:auto_signaltap_0|                                                                     ; 512 (1)           ; 945 (96)     ; 196608      ; 0            ; 0       ; 0         ; 0    ; 0            ; |TOP|sld_signaltap:auto_signaltap_0                                                                                                                                                                                                                                                                                                       ; work         ;
@@ -457,27 +456,15 @@ Note: number of Embedded Multiplier Blocks used is only available after a succes
 +--------+--------------+---------+--------------+--------------+----------------------------------------------------------+--------------------------------------------------------------------------+
 
 
-+---------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                              ;
-+---------------------------------------+-----------------------------------------+
-; Register name                         ; Reason for Removal                      ;
-+---------------------------------------+-----------------------------------------+
-; DDS_Mod:DDS_Mod_inst1|cnt_I[1]        ; Merged with AM_Mod:Am_Mod_inst|cnt_I[3] ;
-; DDS_Mod:DDS_Mod_inst1|cnt_I[2]        ; Merged with AM_Mod:Am_Mod_inst|cnt_I[4] ;
-; DDS_Mod:DDS_Mod_inst1|cnt_I[3]        ; Merged with AM_Mod:Am_Mod_inst|cnt_I[5] ;
-; Total Number of Removed Registers = 3 ;                                         ;
-+---------------------------------------+-----------------------------------------+
-
-
 +------------------------------------------------------+
 ; General Register Statistics                          ;
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 1321  ;
+; Total registers                              ; 1324  ;
 ; Number of registers using Synchronous Clear  ; 55    ;
 ; Number of registers using Synchronous Load   ; 89    ;
-; Number of registers using Asynchronous Clear ; 621   ;
+; Number of registers using Asynchronous Clear ; 624   ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 604   ;
 ; Number of registers using Preset             ; 0     ;
@@ -527,18 +514,6 @@ Note: number of Embedded Multiplier Blocks used is only available after a succes
 ; 5:1                ; 5 bits    ; 15 LEs        ; 5 LEs                ; 10 LEs                 ; Yes        ; |TOP|AM_Mod:Am_Mod_inst|rom_ip:Sin_inst_Carrier|altsyncram:altsyncram_component|altsyncram_noe1:auto_generated|sld_mod_ram_rom:mgl_prim2|sld_rom_sr:\ram_rom_logic_gen:name_gen:info_rom_sr|word_counter[1] ;
 ; 24:1               ; 4 bits    ; 64 LEs        ; 48 LEs               ; 16 LEs                 ; Yes        ; |TOP|DDS_Mod:DDS_Mod_inst1|rom_ip:Sin_inst|altsyncram:altsyncram_component|altsyncram_noe1:auto_generated|sld_mod_ram_rom:mgl_prim2|sld_rom_sr:\ram_rom_logic_gen:name_gen:info_rom_sr|WORD_SR[1]           ;
 ; 24:1               ; 4 bits    ; 64 LEs        ; 48 LEs               ; 16 LEs                 ; Yes        ; |TOP|AM_Mod:Am_Mod_inst|rom_ip:Sin_inst_Carrier|altsyncram:altsyncram_component|altsyncram_noe1:auto_generated|sld_mod_ram_rom:mgl_prim2|sld_rom_sr:\ram_rom_logic_gen:name_gen:info_rom_sr|WORD_SR[1]      ;
-; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |TOP|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|hub_minor_ver_reg[3]                                                                                                                     ;
-; 4:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |TOP|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg[2]                                                                                                                        ;
-; 6:1                ; 10 bits   ; 40 LEs        ; 10 LEs               ; 30 LEs                 ; Yes        ; |TOP|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|irf_reg[3][3]                                                                                                                            ;
-; 6:1                ; 10 bits   ; 40 LEs        ; 10 LEs               ; 30 LEs                 ; Yes        ; |TOP|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|irf_reg[2][8]                                                                                                                            ;
-; 6:1                ; 10 bits   ; 40 LEs        ; 10 LEs               ; 30 LEs                 ; Yes        ; |TOP|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|irf_reg[1][0]                                                                                                                            ;
-; 5:1                ; 6 bits    ; 18 LEs        ; 6 LEs                ; 12 LEs                 ; Yes        ; |TOP|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|sld_rom_sr:hub_info_reg|word_counter[5]                                                                                                  ;
-; 6:1                ; 10 bits   ; 40 LEs        ; 10 LEs               ; 30 LEs                 ; Yes        ; |TOP|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|shadow_irf_reg[3][9]                                                                                                                     ;
-; 6:1                ; 10 bits   ; 40 LEs        ; 10 LEs               ; 30 LEs                 ; Yes        ; |TOP|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|shadow_irf_reg[2][5]                                                                                                                     ;
-; 6:1                ; 10 bits   ; 40 LEs        ; 10 LEs               ; 30 LEs                 ; Yes        ; |TOP|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|shadow_irf_reg[1][5]                                                                                                                     ;
-; 34:1               ; 4 bits    ; 88 LEs        ; 60 LEs               ; 28 LEs                 ; Yes        ; |TOP|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg[0]                                                                                                                       ;
-; 10:1               ; 10 bits   ; 60 LEs        ; 20 LEs               ; 40 LEs                 ; Yes        ; |TOP|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|irsr_reg[5]                                                                                                                              ;
-; 36:1               ; 4 bits    ; 96 LEs        ; 48 LEs               ; 48 LEs                 ; Yes        ; |TOP|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|sld_rom_sr:hub_info_reg|WORD_SR[1]                                                                                                       ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
@@ -1309,13 +1284,14 @@ Note: In order to hide this table in the UI and the text report file, please set
 +---------------+--------+----------+-------------------------------------------------------------------------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "pll_ip:PLL_mod_inst"                                                                ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; Port ; Type   ; Severity ; Details                                                                             ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; c2   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
++-------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "pll_ip:PLL_mod_inst"                                                                                     ;
++------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                                                  ;
++------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; c2   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                      ;
+; c0   ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+----------------------------------------------------------------------------------------------------------+
 
 
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -1337,14 +1313,13 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+-------------+-------+-------+------------+-----------------------------------------------------------------------------------------------------------+
 
 
-+---------------------------------+
-; Elapsed Time Per Partition      ;
-+------------------+--------------+
-; Partition Name   ; Elapsed Time ;
-+------------------+--------------+
-; Top              ; 00:00:01     ;
-; sld_hub:auto_hub ; 00:00:00     ;
-+------------------+--------------+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:02     ;
++----------------+--------------+
 
 
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -1352,30 +1327,30 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------------+---------------+-----------+----------------+-------------------+-----------------------------------------------------------------------------------------------------------------------------------------------+---------+
 ; Name                 ; Type          ; Status    ; Partition Name ; Netlist Type Used ; Actual Connection                                                                                                                             ; Details ;
 +----------------------+---------------+-----------+----------------+-------------------+-----------------------------------------------------------------------------------------------------------------------------------------------+---------+
-; Cov_adc_data[0]      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; AM_Mod:Am_Mod_inst|Cov_adc_data[0]~0                                                                                                          ; N/A     ;
-; Cov_adc_data[0]      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; AM_Mod:Am_Mod_inst|Cov_adc_data[0]~0                                                                                                          ; N/A     ;
-; Cov_adc_data[10]     ; pre-synthesis ; connected ; Top            ; post-synthesis    ; AM_Mod:Am_Mod_inst|Cov_adc_data[10]~20                                                                                                        ; N/A     ;
-; Cov_adc_data[10]     ; pre-synthesis ; connected ; Top            ; post-synthesis    ; AM_Mod:Am_Mod_inst|Cov_adc_data[10]~20                                                                                                        ; N/A     ;
-; Cov_adc_data[11]     ; pre-synthesis ; connected ; Top            ; post-synthesis    ; AM_Mod:Am_Mod_inst|Cov_adc_data[11]~22                                                                                                        ; N/A     ;
-; Cov_adc_data[11]     ; pre-synthesis ; connected ; Top            ; post-synthesis    ; AM_Mod:Am_Mod_inst|Cov_adc_data[11]~22                                                                                                        ; N/A     ;
-; Cov_adc_data[1]      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; AM_Mod:Am_Mod_inst|Cov_adc_data[1]~2                                                                                                          ; N/A     ;
-; Cov_adc_data[1]      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; AM_Mod:Am_Mod_inst|Cov_adc_data[1]~2                                                                                                          ; N/A     ;
-; Cov_adc_data[2]      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; AM_Mod:Am_Mod_inst|Cov_adc_data[2]~4                                                                                                          ; N/A     ;
-; Cov_adc_data[2]      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; AM_Mod:Am_Mod_inst|Cov_adc_data[2]~4                                                                                                          ; N/A     ;
-; Cov_adc_data[3]      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; AM_Mod:Am_Mod_inst|Cov_adc_data[3]~6                                                                                                          ; N/A     ;
-; Cov_adc_data[3]      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; AM_Mod:Am_Mod_inst|Cov_adc_data[3]~6                                                                                                          ; N/A     ;
-; Cov_adc_data[4]      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; AM_Mod:Am_Mod_inst|Cov_adc_data[4]~8                                                                                                          ; N/A     ;
-; Cov_adc_data[4]      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; AM_Mod:Am_Mod_inst|Cov_adc_data[4]~8                                                                                                          ; N/A     ;
-; Cov_adc_data[5]      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; AM_Mod:Am_Mod_inst|Cov_adc_data[5]~10                                                                                                         ; N/A     ;
-; Cov_adc_data[5]      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; AM_Mod:Am_Mod_inst|Cov_adc_data[5]~10                                                                                                         ; N/A     ;
-; Cov_adc_data[6]      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; AM_Mod:Am_Mod_inst|Cov_adc_data[6]~12                                                                                                         ; N/A     ;
-; Cov_adc_data[6]      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; AM_Mod:Am_Mod_inst|Cov_adc_data[6]~12                                                                                                         ; N/A     ;
-; Cov_adc_data[7]      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; AM_Mod:Am_Mod_inst|Cov_adc_data[7]~14                                                                                                         ; N/A     ;
-; Cov_adc_data[7]      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; AM_Mod:Am_Mod_inst|Cov_adc_data[7]~14                                                                                                         ; N/A     ;
-; Cov_adc_data[8]      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; AM_Mod:Am_Mod_inst|Cov_adc_data[8]~16                                                                                                         ; N/A     ;
-; Cov_adc_data[8]      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; AM_Mod:Am_Mod_inst|Cov_adc_data[8]~16                                                                                                         ; N/A     ;
-; Cov_adc_data[9]      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; AM_Mod:Am_Mod_inst|Cov_adc_data[9]~18                                                                                                         ; N/A     ;
-; Cov_adc_data[9]      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; AM_Mod:Am_Mod_inst|Cov_adc_data[9]~18                                                                                                         ; N/A     ;
+; Cov_adc_data[0]      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; AM_Mod:Am_Mod_inst|mul_ip_12_12:MULT_ScaledAdc_inst|lpm_mult:lpm_mult_component|mult_9dp:auto_generated|result[11]                            ; N/A     ;
+; Cov_adc_data[0]      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; AM_Mod:Am_Mod_inst|mul_ip_12_12:MULT_ScaledAdc_inst|lpm_mult:lpm_mult_component|mult_9dp:auto_generated|result[11]                            ; N/A     ;
+; Cov_adc_data[10]     ; pre-synthesis ; connected ; Top            ; post-synthesis    ; AM_Mod:Am_Mod_inst|Cov_adc_data[10]~14                                                                                                        ; N/A     ;
+; Cov_adc_data[10]     ; pre-synthesis ; connected ; Top            ; post-synthesis    ; AM_Mod:Am_Mod_inst|Cov_adc_data[10]~14                                                                                                        ; N/A     ;
+; Cov_adc_data[11]     ; pre-synthesis ; connected ; Top            ; post-synthesis    ; AM_Mod:Am_Mod_inst|Cov_adc_data[11]~16                                                                                                        ; N/A     ;
+; Cov_adc_data[11]     ; pre-synthesis ; connected ; Top            ; post-synthesis    ; AM_Mod:Am_Mod_inst|Cov_adc_data[11]~16                                                                                                        ; N/A     ;
+; Cov_adc_data[1]      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; AM_Mod:Am_Mod_inst|mul_ip_12_12:MULT_ScaledAdc_inst|lpm_mult:lpm_mult_component|mult_9dp:auto_generated|result[12]                            ; N/A     ;
+; Cov_adc_data[1]      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; AM_Mod:Am_Mod_inst|mul_ip_12_12:MULT_ScaledAdc_inst|lpm_mult:lpm_mult_component|mult_9dp:auto_generated|result[12]                            ; N/A     ;
+; Cov_adc_data[2]      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; AM_Mod:Am_Mod_inst|mul_ip_12_12:MULT_ScaledAdc_inst|lpm_mult:lpm_mult_component|mult_9dp:auto_generated|result[13]                            ; N/A     ;
+; Cov_adc_data[2]      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; AM_Mod:Am_Mod_inst|mul_ip_12_12:MULT_ScaledAdc_inst|lpm_mult:lpm_mult_component|mult_9dp:auto_generated|result[13]                            ; N/A     ;
+; Cov_adc_data[3]      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; AM_Mod:Am_Mod_inst|Cov_adc_data[3]~0                                                                                                          ; N/A     ;
+; Cov_adc_data[3]      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; AM_Mod:Am_Mod_inst|Cov_adc_data[3]~0                                                                                                          ; N/A     ;
+; Cov_adc_data[4]      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; AM_Mod:Am_Mod_inst|Cov_adc_data[4]~2                                                                                                          ; N/A     ;
+; Cov_adc_data[4]      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; AM_Mod:Am_Mod_inst|Cov_adc_data[4]~2                                                                                                          ; N/A     ;
+; Cov_adc_data[5]      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; AM_Mod:Am_Mod_inst|Cov_adc_data[5]~4                                                                                                          ; N/A     ;
+; Cov_adc_data[5]      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; AM_Mod:Am_Mod_inst|Cov_adc_data[5]~4                                                                                                          ; N/A     ;
+; Cov_adc_data[6]      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; AM_Mod:Am_Mod_inst|Cov_adc_data[6]~6                                                                                                          ; N/A     ;
+; Cov_adc_data[6]      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; AM_Mod:Am_Mod_inst|Cov_adc_data[6]~6                                                                                                          ; N/A     ;
+; Cov_adc_data[7]      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; AM_Mod:Am_Mod_inst|Cov_adc_data[7]~8                                                                                                          ; N/A     ;
+; Cov_adc_data[7]      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; AM_Mod:Am_Mod_inst|Cov_adc_data[7]~8                                                                                                          ; N/A     ;
+; Cov_adc_data[8]      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; AM_Mod:Am_Mod_inst|Cov_adc_data[8]~10                                                                                                         ; N/A     ;
+; Cov_adc_data[8]      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; AM_Mod:Am_Mod_inst|Cov_adc_data[8]~10                                                                                                         ; N/A     ;
+; Cov_adc_data[9]      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; AM_Mod:Am_Mod_inst|Cov_adc_data[9]~12                                                                                                         ; N/A     ;
+; Cov_adc_data[9]      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; AM_Mod:Am_Mod_inst|Cov_adc_data[9]~12                                                                                                         ; N/A     ;
 ; Cov_carrier_data[0]  ; pre-synthesis ; connected ; Top            ; post-synthesis    ; AM_Mod:Am_Mod_inst|Cov_carrier_data_reg[0]                                                                                                    ; N/A     ;
 ; Cov_carrier_data[0]  ; pre-synthesis ; connected ; Top            ; post-synthesis    ; AM_Mod:Am_Mod_inst|Cov_carrier_data_reg[0]                                                                                                    ; N/A     ;
 ; Cov_carrier_data[10] ; pre-synthesis ; connected ; Top            ; post-synthesis    ; AM_Mod:Am_Mod_inst|Cov_carrier_data_reg[10]                                                                                                   ; N/A     ;
@@ -1458,7 +1433,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Full Version
-    Info: Processing started: Thu Jun 29 01:57:29 2023
+    Info: Processing started: Fri Jun 30 14:32:24 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Digital_Modu -c Digital_Modu
 Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file fm_mod.v
@@ -1491,6 +1466,10 @@ Info (12021): Found 1 design units, including 1 entities, in source file ipcore/
     Info (12023): Found entity 1: mul_ip_12_12
 Info (12021): Found 1 design units, including 1 entities, in source file ipcore/mul_ip_12_64.v
     Info (12023): Found entity 1: mul_ip_12_64
+Info (12021): Found 1 design units, including 1 entities, in source file modu_ctrl.v
+    Info (12023): Found entity 1: Modu_ctrl
+Info (12021): Found 1 design units, including 1 entities, in source file commu_mod.v
+    Info (12023): Found entity 1: Commu_Mod
 Warning (10222): Verilog HDL Parameter Declaration warning at FM_Mod.v(11): Parameter Declaration in module "FM_Mod" behaves as a Local Parameter Declaration because the module has a Module Parameter Port List
 Warning (10222): Verilog HDL Parameter Declaration warning at FM_Mod.v(13): Parameter Declaration in module "FM_Mod" behaves as a Local Parameter Declaration because the module has a Module Parameter Port List
 Warning (10222): Verilog HDL Parameter Declaration warning at AM_Mod.v(17): Parameter Declaration in module "AM_Mod" behaves as a Local Parameter Declaration because the module has a Module Parameter Port List
@@ -1644,30 +1623,27 @@ Info (12021): Found 1 design units, including 1 entities, in source file db/cntr
 Info (12021): Found 1 design units, including 1 entities, in source file db/cmpr_ngc.tdf
     Info (12023): Found entity 1: cmpr_ngc
 Info (12033): Analysis and Synthesis generated SignalTap II or debug node instance "auto_signaltap_0"
+Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "base_gen2[0]" is stuck at GND
     Warning (13410): Pin "base_gen2[1]" is stuck at GND
 Info (286031): Timing-Driven Synthesis is running on partition "Top"
-Info (13000): Registers with preset signals will power-up high
-Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
-Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "sld_hub:auto_hub|receive[0][0]" is stuck at GND
-Info (286031): Timing-Driven Synthesis is running on partition "sld_hub:auto_hub"
 Info (35024): Succesfully connected in-system debug instance "auto_signaltap_0" to all 97 required data inputs, trigger inputs, acquisition clocks, and dynamic pins
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 1 node(s), including 0 DDIO, 1 PLL, 0 transceiver and 0 LCELL
-Warning (15899): PLL "pll_ip:PLL_mod_inst|altpll:altpll_component|pll_ip_altpll:auto_generated|pll1" has parameters clk2_multiply_by and clk2_divide_by specified but port CLK[2] is not connected
+Warning (15897): PLL "pll_ip:PLL_mod_inst|altpll:altpll_component|pll_ip_altpll:auto_generated|pll1" has parameter compensate_clock set to clock0 but port CLK[0] is not connected
+Warning (15899): PLL "pll_ip:PLL_mod_inst|altpll:altpll_component|pll_ip_altpll:auto_generated|pll1" has parameters clk0_multiply_by and clk0_divide_by specified but port CLK[0] is not connected
 Info (21057): Implemented 1849 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 5 input pins
-    Info (21059): Implemented 55 output pins
-    Info (21061): Implemented 1711 logic cells
+    Info (21059): Implemented 54 output pins
+    Info (21061): Implemented 1712 logic cells
     Info (21064): Implemented 72 RAM segments
     Info (21065): Implemented 1 PLLs
     Info (21062): Implemented 4 DSP elements
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 14 warnings
-    Info: Peak virtual memory: 4735 megabytes
-    Info: Processing ended: Thu Jun 29 01:57:38 2023
-    Info: Elapsed time: 00:00:09
-    Info: Total CPU time (on all processors): 00:00:09
+    Info: Peak virtual memory: 4745 megabytes
+    Info: Processing ended: Fri Jun 30 14:32:45 2023
+    Info: Elapsed time: 00:00:21
+    Info: Total CPU time (on all processors): 00:00:08
 
 

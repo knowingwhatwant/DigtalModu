@@ -1,13 +1,13 @@
-Analysis & Synthesis Status : Successful - Thu Jun 29 01:57:38 2023
+Analysis & Synthesis Status : Successful - Fri Jun 30 14:32:45 2023
 Quartus II 64-Bit Version : 13.1.0 Build 162 10/23/2013 SJ Full Version
 Revision Name : Digital_Modu
 Top-level Entity Name : TOP
 Family : Cyclone IV E
-Total logic elements : 1,680
-    Total combinational functions : 1,054
-    Dedicated logic registers : 1,321
-Total registers : 1321
-Total pins : 56
+Total logic elements : 1,684
+    Total combinational functions : 1,055
+    Dedicated logic registers : 1,324
+Total registers : 1324
+Total pins : 55
 Total virtual pins : 0
 Total memory bits : 294,912
 Embedded Multiplier 9-bit elements : 4

@@ -2,7 +2,7 @@ module TOP(
 		input		clk,
 		input		rst_n,
 		output 		clk_120M,
-		output 		clk_50M,
+		//output 		clk_50M,
 		output	   [1:0]base_gen2,
 		output 		clk_inv,
 		output 		locked,
@@ -25,7 +25,7 @@ wire clk_100k;
 pll_ip PLL_mod_inst(
 	.areset(~rst_n),
 	.inclk0(clk),
-	.c0(clk_50M),
+	//.c0(clk_50M),
 	.c1(clk_120M),
 	.c2(clk_100k),
 	.locked(locked)
@@ -59,7 +59,7 @@ QPSK_Mod Bpsk_Mod_inst(
 
 //---------------AM-------------------//
 AM_Mod Am_Mod_inst(
-	.clk(clk_120M),
+	.clk(clk_inv),
 	.rst(rst_n),
 	.adc_data(modu_data_10k),
 	.AM_Mod_data(adc_data),
